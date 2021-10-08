@@ -7,8 +7,51 @@
     <title>opencv project</title>
 </head>
 <body>
-    <h1>opencv project</h1>
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/6c7b9d128907407.615f95125fd27.png">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/xFVEu-SJqAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="mainDiv">
+        <h1>opencv project</h1>
+        <p>this is a very good app man. this is a very good app man. this is a very good app man. this is a very good app man. this is a very good app man. this is a very good app man. this is a very good app man. this is a very good app man. this is a very good app man. this is a very good app man. this is a very good app man. </p>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/6c7b9d128907407.615f95125fd27.png">
+        <div class="wrapperForIframe">
+            <div class="h_iframe">
+                <!-- a transparent image is preferable -->
+                <img class="ratio" src="http://placehold.it/16x9"/>
+                <iframe src="https://www.youtube.com/embed/xFVEu-SJqAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- <iframe src="http://www.youtube.com/embed/WsFWhL4Y84Y" frameborder="0" allowfullscreen></iframe> -->
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
+<style>
+    .wrapperForIframe    {width:100%;height:100%;margin:20px auto;background:#CCC}
+    .h_iframe            {position:relative;}
+    .h_iframe .ratio     {display:block;width:100%;height:auto;}
+    .h_iframe iframe     {position:absolute;top:0;left:0;width:100%; height:100%;}
+
+    * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    img {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        background-color: rgb(32, 32, 32);
+        color: white;
+    }
+
+    .mainDiv {
+        width: 100%;
+        max-width: 900px;
+    }
+
+
+</style>
